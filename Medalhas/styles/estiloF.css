@@ -1,0 +1,44 @@
+/*Estilização para as fitas*/
+
+body{
+    background-color: black;
+}
+
+section{
+    padding: 30px;
+    position: relative;
+    max-width: 350px;
+    height: 450px;
+    margin-left: 50%;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+section > .carrossel-fitas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.carrossel-fitas button{
+    height: 42px;
+    width: 65px;
+    margin-right: 10px;
+    color: #e2e2e2;
+    background-color: black;
+    border:0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.carrossel-fitas button:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}

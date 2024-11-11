@@ -1,0 +1,57 @@
+/*Estilo da pagina principal*/
+body{
+    background-color: black;
+}
+
+section{
+    padding: 30px;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateX(-50%)
+}
+
+.main-conteiner{
+    display: grid;
+    grid-row: inherit;
+}
+
+.main-conteiner .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.main-conteiner .footer a{
+    margin-top: 15px;
+}
+
+.main-conteiner button{
+    height: 42px;
+    width: 75px;
+    margin-right: 10px;
+    color: #e2e2e2;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.main-conteiner button:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+    transform:translateY(-6px)
+}
+

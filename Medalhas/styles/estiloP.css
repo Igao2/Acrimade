@@ -1,22 +1,165 @@
 /*Estilo da pagina principal*/
 body{
-    background-color: black;
+    font-family: 'Montserrat',sans-serif;
+}
+header{
+    padding: 6px;
+    background-color: #6d0c0f;
+    text-align: center;
+}
+li{
+    text-align: start;
+}
+.menu li {
+    margin-right: 70px;
 }
 
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
 section{
     padding: 30px;
     position: relative;
-    max-width: 450px;
+    width: 58%;;
     height: 550px;
     margin-left: 50%;
     background-color: #fff;
     border-radius: 10px;
     transform: translateX(-50%)
 }
+h3{
+    text-align: left;
+}
+section > .carrossel-medalhas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.medbutt{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 240;
+    text-shadow: 1px 1px #201f1f;
+    background-color: #e0c39d;
+    text-align: right;
+    position: relative;
+    padding: 10px 20px;
+    background-image: url('Capturar.jpg'); /* Caminho da imagem de fundo */
+    background-size: 250px 250px; /* Ajuste o tamanho da imagem conforme necessário */
+    background-repeat: no-repeat;
+    background-position: -110px center; /* Posiciona a imagem à esquerda, centralizada verticalmente */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
+}
+button {
+    width: 250px;
+   height: 250px !important;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 40px;
+    }
+
+.carrossel-medalhas button{
+    height: 42px;
+    width: 65px;
+    margin-right: 10px;
+    color: #e2e2e2;
+    background-color: black;
+    border:0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.carrossel-medalhas button:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
+section > .carrossel-fitas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.carrossel-fitas button{
+    height: 42px;
+    width: 65px;
+    margin-right: 10px;
+    color: #e2e2e2;
+    background-color: black;
+    border:0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.carrossel-fitas button:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
+section > .carrossel-trofeus{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.carrossel-trofeus button{
+    height: 42px;
+    width: 65px;
+    margin-right: 10px;
+    color: #e2e2e2;
+    background-color: black;
+    border:0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+.sobre{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.carrossel-trofeus button:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
 
 .main-conteiner{
-    display: grid;
-    grid-row: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 .main-conteiner .footer{
@@ -31,26 +174,18 @@ section{
 
 .main-conteiner button{
     height: 42px;
-    width: 75px;
-    margin-right: 10px;
-    color: #e2e2e2;
-    background-color: black;
-    border-radius: 10px;
-    border: none;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
+    
 
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    
 }
 
 .main-conteiner button:hover{
-    color: black;
-    background-color: gray;
+    
+    background-color: #b6782f;
     cursor: pointer;
     transform:translateY(-6px)
 }

@@ -64,9 +64,49 @@ section > .carrossel-medalhas{
     cursor: pointer;
     padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
 }
+
+.trophy button{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 240;
+    text-shadow: 1px 1px #201f1f;
+    background-color: #642d2c;
+    text-align: right;
+    position: relative;
+    padding: 10px 20px;
+    background-image: url('imagem\ trofeu.avif'); /* Caminho da imagem de fundo */
+    background-size: 250px 250px; /* Ajuste o tamanho da imagem conforme necessário */
+    background-repeat: no-repeat;
+    background-position: -110px center; /* Posiciona a imagem à esquerda, centralizada verticalmente */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
+}
+
+.fitas button{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 240;
+    text-shadow: 1px 1px #201f1f;
+    background-color: #af7746;
+    text-align: right;
+    position: relative;
+    padding: 10px 20px;
+    background-image: url('Fita1.png'); /* Caminho da imagem de fundo */
+    background-size: 250px 250px; /* Ajuste o tamanho da imagem conforme necessário */
+    background-repeat: no-repeat;
+    background-position: -110px center; /* Posiciona a imagem à esquerda, centralizada verticalmente */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
+}
 button {
     width: 250px;
-   height: 250px !important;
+    height: 250px !important;
     background-color: black;
     color: white;
     border: none;
@@ -158,24 +198,18 @@ section > .carrossel-trofeus{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     gap: 10px; /* Espaçamento entre os botões */
 }
 
-.main-conteiner .footer{
+footer{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 35px;
-}
-
-.main-conteiner .footer a{
-    margin-top: 15px;
 }
 
 .main-conteiner button{
     height: 42px;
-    
-
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -184,9 +218,17 @@ section > .carrossel-trofeus{
 }
 
 .main-conteiner button:hover{
-    
     background-color: #b6782f;
     cursor: pointer;
     transform:translateY(-6px)
 }
 
+.trophy button:hover{
+    background-color: #5a0908;
+    cursor: pointer;
+}
+
+.fitas button:hover{
+    background-color: #b6782f;
+    cursor: pointer;
+}

@@ -1,11 +1,20 @@
 /*Estilo da pagina principal*/
 body{
     font-family: 'Montserrat',sans-serif;
+background: linear-gradient(to bottom, #ffffff, #d9d9d9);
+  margin: 0;
+  
+}
+.insta{
+    width: 30px;
+    height: auto;
+    margin-left: 0px;
 }
 header{
-    padding: 6px;
+    padding: 20px;
     background-color: #6d0c0f;
     text-align: center;
+    font-size: 18px;
 }
 li{
     text-align: start;
@@ -18,6 +27,7 @@ li{
     text-decoration: none;
     color: white;
     font-weight: 200;
+    cursor: pointer;;
 }
 .menu {
     list-style: none;
@@ -34,10 +44,17 @@ section{
     margin-left: 50%;
     background-color: #fff;
     border-radius: 10px;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    
+}
+.insta{
+    cursor: pointer;
 }
 h3{
+    margin-top: 6px;
     text-align: left;
+    font-weight: 500;
+    font-size: 30px;
 }
 section > .carrossel-medalhas{
     display: flex;
@@ -65,7 +82,7 @@ section > .carrossel-medalhas{
     padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
 }
 
-.trophy button{
+.tbutt{
     font-family: 'Montserrat',sans-serif;
     font-size: 20px;
     font-weight: 240;
@@ -82,10 +99,10 @@ section > .carrossel-medalhas{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
+    padding-right: 20px; /* Espaço extra para o texto, para não sobrepor a imagem */
 }
 
-.fitas button{
+.fbutt{
     font-family: 'Montserrat',sans-serif;
     font-size: 20px;
     font-weight: 240;
@@ -104,7 +121,10 @@ section > .carrossel-medalhas{
     cursor: pointer;
     padding-right: 10px; /* Espaço extra para o texto, para não sobrepor a imagem */
 }
-button {
+.medbutt,.tbutt,.fbutt {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
     width: 250px;
     height: 250px !important;
     background-color: black;
@@ -206,6 +226,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-top: 35px;
+    font-weight: 200 !important;
 }
 
 .main-conteiner button{
@@ -231,4 +252,19 @@ footer{
 .fitas button:hover{
     background-color: #b6782f;
     cursor: pointer;
+}
+h2{
+    font-weight: 500 !important;
+    font-size: 30px;
+    
+}
+footer {
+    text-align: end;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+    background-color: #6B0000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 9px;
 }

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Medalhas</title>
 </head>
-<body>
+<body id="med">
     <header>
         <nav>
             <ul class="menu">
@@ -24,14 +24,28 @@
         <h2>Medalhas</h2>
         <p>Temos diversas medalhas a disposição, como medalhas acrílicas, de ferro e de madeira. Faça já o seu pedido
         </p>
-        <div id="carrossel-medalhas">
-            <!--Inserir imagens das medalhas-->
-            
+        <div class="fotos-medalha">
+        <div class="carrossel-medalhas" id="medcarr">
+        <div class="fmedalha">
+            <img  src="styles/Med1c.JPG">
         </div>
-        <button id="pedirmedalhas">Pedir</button>
+        <div class="fmedalha">
+            <img src="styles/Med2c.JPG">
+            </div>
+            <div class="fmedalha">
+            <img src="styles/Med3c.JPG">
+        </div>
+        </div>
+        <button class="medslide prev" id="prev">&#10094;</button>
+        <button class="medslide next" id="next">&#10095;</button>
+        </div>
+    <button class="pedirmedalhas">Pedir</button>
+        
+    </div>
     </section>
     <footer id="redes"><p>Redes Sociais:</p>
         <img class="insta" src="/styles/instagram (2).png">
     </footer>
+    <script src="/script/script.js"></script>
 </body>
 </html>

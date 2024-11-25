@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Trofeus</title>
 </head>
-<body>
+<body id="trof">
     <header>
         <nav>
             <ul class="menu">
@@ -23,16 +23,27 @@
         <div class="Trofeus">
         <h2>Troféus</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi sed cumque a laudantium voluptates ipsam, magnam rerum accusantium, maxime minima? Voluptatem eum minima nesciunt facilis hic fuga modi repudiandae.
-        </p>
-        </div>
-
-        <div class="carrossel-trofeus">
-            <!--Inserir imagens das medalhas-->
-            <button>Pedir</button>
-        </div>
+            <div class="fotos-trofeu">
+                <div class="carrossel-trofeu" id="trofcarr">
+                <div class="ftrofeu">
+                    <img  src="styles/Med1c.JPG">
+                </div>
+                <div class="ftrofeu">
+                    <img src="styles/Med2c.JPG">
+                    </div>
+                    <div class="ftrofeu">
+                    <img src="styles/Med3c.JPG">
+                </div>
+                </div>
+                <button class="trofslide prev" id="prev">&#10094;</button>
+                <button class="trofslide next" id="next">&#10095;</button>
+                </div>
+            </div>
+            <button class="pedirtrofeus">Pedir</button>
     </section>
     <footer id="redes"><p>Redes Sociais:</p>
         <img class="insta" src="/styles/instagram (2).png">
         </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>

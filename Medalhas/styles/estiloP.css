@@ -1,10 +1,19 @@
-/*Estilo da pagina principal*/
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    .fotos-medalha {
+      width: 200px;
+    }
+    .image {
+      width: 100%;
+    }
+  }/*Estilo da pagina principal*/
 body{
     font-family: 'Montserrat',sans-serif;
 background: linear-gradient(to bottom, #ffffff, #d9d9d9);
   margin: 0;
   
 }
+
 .insta{
     width: 30px;
     height: auto;
@@ -18,6 +27,76 @@ header{
 }
 li{
     text-align: start;
+}
+.carrossel-medalhas,.carrossel-trofeu{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+
+}
+
+.Medalhas,.Trofeus{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.pedmed{
+    
+    
+    transform: translateY(-50%);
+}
+.pedirmedalhas,.pedirtrofeus{
+  display: block; 
+  margin: 20px auto; 
+  padding: 10px 20px; 
+  background-color: #800000; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fotos-medalha,.fotos-trofeu{
+    
+    position: relative;
+    width: 300px; 
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.fmedalha,.ftrofeu{
+    flex: 0 0 100%; /* Cada item ocupa 100% da largura do contêiner */
+    text-align: center;
+}
+.fmedalha img,.ftrofeu img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.medslide, .trofslide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.medslide.prev,.trofslide.prev {
+    left: 10px;
+}
+
+.medslide.next,.trofslide.next {
+    right: 10px;
+}
+
+.medslide:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .menu li {
     margin-right: 70px;
@@ -40,7 +119,7 @@ section{
     padding: 30px;
     position: relative;
     width: 58%;;
-    height: 550px;
+    height: auto;
     margin-left: 50%;
     background-color: #fff;
     border-radius: 10px;
@@ -56,12 +135,7 @@ h3{
     font-weight: 500;
     font-size: 30px;
 }
-section > .carrossel-medalhas{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-top: 75px;
-}
+
 .medbutt{
     font-family: 'Montserrat',sans-serif;
     font-size: 20px;

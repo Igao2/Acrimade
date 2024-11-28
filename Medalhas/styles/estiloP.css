@@ -9,9 +9,8 @@
   }/*Estilo da pagina principal*/
 body{
     font-family: 'Montserrat',sans-serif;
-background: linear-gradient(to bottom, #ffffff, #d9d9d9);
-  margin: 0;
-  
+    background: linear-gradient(to bottom, #ffffff, #d9d9d9);
+    margin: 0;
 }
 
 .insta{
@@ -41,8 +40,6 @@ li{
     align-items: center;
 }
 .pedmed{
-    
-    
     transform: translateY(-50%);
 }
 .pedirmedalhas,.pedirtrofeus{
@@ -292,7 +289,6 @@ section > .carrossel-trofeus{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espaçamento entre os botões */
 }
 
 footer{
@@ -335,10 +331,55 @@ h2{
 footer {
     text-align: end;
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
     background-color: #6B0000;
     color: #ffffff;
     font-size: 16px;
     padding: 9px;
+}
+
+/*Parte do mobile*/
+
+
+@media screen and (max-width:1020px) {
+
+    .mobile-menu{
+        display: flex;
+    }
+
+    header{
+        position: absolute;
+        background: none;
+        z-index: 1;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0vh;
+        right: 0;
+        left: 10em;
+        margin-left: 22em;
+        width: 32vw;
+        height: 62vh;
+        background: #23232e;
+        border-radius: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu li{
+        margin-left: 0;
+    }
+
+    #sobreacrimade{
+        font-size: 20px;
+    }
+
+    .medals{
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
 }

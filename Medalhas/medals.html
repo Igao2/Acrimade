@@ -9,15 +9,23 @@
 </head>
 <body id="med">
     <header>
+        <div class="menu-container">
+            <button class="menu-toggle" aria-label="Abrir Menu">
+              &#9776; <!-- Ícone de 3 barrinhas -->
+            </button>
+            <div class="overlay"></div>
         <nav>
             <ul class="menu">
-                <li><a onclick="window.location.href = 'index.html'">Sobre</a></li>
-                <li><a onclick="window.location.href = 'medals.html'">Medalhas</a></li>
-                <li><a onclick="window.location.href = 'trofeus.html'">Troféus</a></li>
-                <li><a onclick="window.location.href = 'fitas.html'">Fitas</a></li>
-                <li><a href="#redes">Redes sociais</a></li>
+                <li class="so"><a onclick="window.location.href = 'index.html'">Sobre  ❱</a></li>
+                <li class="me"><a onclick="window.location.href = 'medals.html'">Medalhas  ❱</a></li>
+                <li class="tr"><a onclick="window.location.href = 'trofeus.html'">Troféus  ❱</a></li>
+                <li class="f"><a onclick="window.location.href = 'fitas.html'">Fitas  ❱</a></li>
+                <li id="re"><a href="#redes" onclick="const men = document.querySelector('.menu');
+                    const overla = document.querySelector('.overlay');men.classList.remove('active');
+                      overla.classList.remove('active');">Redes sociais ❱</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     <section>
         <div class="Medalhas">

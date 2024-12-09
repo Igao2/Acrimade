@@ -2,6 +2,22 @@ document.addEventListener("DOMContentLoaded",()=>{
     var body = document.body.id;
     if(body=="index")
     {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        const overlay = document.querySelector('.overlay');
+        
+        // Abre e fecha o menu
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          overlay.classList.toggle('active');
+        });
+        
+        // Fecha o menu ao clicar fora
+        overlay.addEventListener('click', () => {
+          menu.classList.remove('active');
+          overlay.classList.remove('active');
+        });
+        
         var med = document.getElementById("med");
         var trof = document.getElementById("trof");
         var fitas = document.getElementById("fitas");
@@ -17,6 +33,21 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     if(body=="med")
         {
+            const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        const overlay = document.querySelector('.overlay');
+        
+        // Abre e fecha o menu
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          overlay.classList.toggle('active');
+        });
+        
+        // Fecha o menu ao clicar fora
+        overlay.addEventListener('click', () => {
+          menu.classList.remove('active');
+          overlay.classList.remove('active');
+        });
             const carousel = document.getElementById('medcarr');
             const items = document.querySelectorAll('.fmedalha');
             let currentIndex = 0;
@@ -45,6 +76,22 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     if(body=="trof")
     {
+        const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay');
+
+// Abre e fecha o menu
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
+
+// Fecha o menu ao clicar fora
+overlay.addEventListener('click', () => {
+  menu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
         const carousel = document.getElementById('trofcarr');
         const items = document.querySelectorAll('.ftrofeu');
         let currentIndex = 0;

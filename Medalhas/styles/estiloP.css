@@ -433,11 +433,11 @@ footer {
     margin-top: 20px;
     }
     .fotos-medalha{
-        width: 252px;
+        width: 252px !important;
     }
     
     .fotos-trofeu{
-        width: 252px;
+        width: 252px !important;
     }
     
 }

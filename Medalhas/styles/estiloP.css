@@ -432,5 +432,12 @@ footer {
     text-align: center; /* Center the content */
     margin-top: 20px;
     }
+    .fotos-medalha{
+        width: 252px;
+    }
+    
+    .fotos-trofeu{
+        width: 252px;
+    }
     
 }

@@ -7,17 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Fitas</title>
 </head>
-<body  id="fita">
+<body  id="fitas">
     <header>
+        <div class="menu-container">
+            <button class="menu-toggle" aria-label="Abrir Menu">
+              &#9776; <!-- Ícone de 3 barrinhas -->
+            </button>
+            <div class="overlay"></div>
         <nav>
             <ul class="menu">
-                <li><a onclick="window.location.href = 'index.html'">Sobre</a></li>
-                <li><a onclick="window.location.href = 'medals.html'">Medalhas</a></li>
-                <li><a onclick="window.location.href = 'trofeus.html'">Troféus</a></li>
-                <li><a onclick="window.location.href = 'fitas.html'">Fitas</a></li>
-                <li><a href="#redes">Redes sociais</a></li>
+                <li class="so"><a onclick="window.location.href = 'index.html';">Sobre  ❱</a></li>
+                <li class="me"><a onclick="window.location.href = 'medals.html'">Medalhas  ❱</a></li>
+                <li class="tr"><a onclick="window.location.href = 'trofeus.html'">Troféus  ❱</a></li>
+                <li class="f"><a onclick="window.location.href = 'fitas.html'">Fitas  ❱</a></li>
+                <li id="re"><a href="#redes" onclick="const men = document.querySelector('.menu');
+                    const overla = document.querySelector('.overlay');men.classList.remove('active');
+                      overla.classList.remove('active');">Redes sociais  ❱</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     <section>
         <div class="Fitas">
@@ -25,14 +33,28 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi sed cumque a laudantium voluptates ipsam, magnam rerum accusantium, maxime minima? Voluptatem eum minima nesciunt facilis hic fuga modi repudiandae.
         </p>
         </div>
+        <div class="fotos-fitas">
+            <div class="carrossel-fitas" id="carfitas">
+            <div class="ffitas">
+                <img  src="styles/Med1c.JPG">
+            </div>
+            <div class="ffitas">
+                <img src="styles/Med2c.JPG">
+                </div>
+                <div class="ffitas">
+                <img src="styles/Med3c.JPG">
+            </div>
+            </div>
+            <button class="fitslide prev" id="prev">&#10094;</button>
+            <button class="fitslide next" id="next">&#10095;</button>
+            </div>
+        <button class="pedirfitas">Pedir</button>
 
-        <div class="carrossel-fitas">
-            <!--Inserir imagens das medalhas-->
-            <button>Pedir</button>
-        </div>
     </section>
     <footer id="redes"><p>Redes Sociais:</p>
-        <img class="insta" src="/styles/instagram (2).png">
-        </footer>
+        <img class="insta" src="./styles/instagram (2).png" alt="Ir para o instagram"><img class="whats" src="./styles/whatsapp_socialnetwork_17360.png" alt="Ir para o Whatsapp">
+        
+    </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

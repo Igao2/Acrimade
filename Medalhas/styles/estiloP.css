@@ -16,7 +16,14 @@ body{
 .insta{
     width: 30px;
     height: auto;
-    margin-left: 0px;
+    cursor: pointer;
+    
+}
+.whats{
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    
 }
 header{
     padding: 20px;
@@ -27,7 +34,7 @@ header{
 li{
     text-align: start;
 }
-.carrossel-medalhas,.carrossel-trofeu{
+.carrossel-medalhas,.carrossel-trofeu,.carrossel-fitas{
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
@@ -42,7 +49,7 @@ li{
 .pedmed{
     transform: translateY(-50%);
 }
-.pedirmedalhas,.pedirtrofeus{
+.pedirmedalhas,.pedirtrofeus,.pedirfitas{
   display: block; 
   margin: 20px auto; 
   padding: 10px 20px; 
@@ -52,7 +59,7 @@ li{
   border-radius: 5px;
   cursor: pointer;
 }
-.fotos-medalha,.fotos-trofeu{
+.fotos-medalha,.fotos-trofeu,.fotos-fitas{
     
     position: relative;
     width: 300px; 
@@ -61,17 +68,17 @@ li{
     border: 1px solid #ccc;
     border-radius: 10px;
 }
-.fmedalha,.ftrofeu{
+.fmedalha,.ftrofeu, .ffitas{
     flex: 0 0 100%; /* Cada item ocupa 100% da largura do contêiner */
     text-align: center;
 }
-.fmedalha img,.ftrofeu img{
+.fmedalha img,.ftrofeu img, .ffitas img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
-.medslide, .trofslide{
+.medslide, .trofslide,.fitslide{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -84,11 +91,11 @@ li{
     border-radius: 50%;
     z-index: 10;
 }
-.medslide.prev,.trofslide.prev {
+.medslide.prev,.trofslide.prev,.fitslide.prev {
     left: 10px;
 }
 
-.medslide.next,.trofslide.next {
+.medslide.next,.trofslide.next,.fitslide.next {
     right: 10px;
 }
 
@@ -293,18 +300,16 @@ section > .carrossel-trofeus{
 
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 35px;
     font-weight: 200 !important;
     text-align: end;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
     background-color: #6B0000;
     color: #ffffff;
     font-size: 16px;
     padding: 9px;
+    gap: 20px 
 }
 
 .main-conteiner button{
@@ -336,16 +341,7 @@ h2{
     font-size: 30px;
     
 }
-footer {
-    text-align: end;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    background-color: #6B0000;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 9px;
-}
+
 
 .menu-toggle {
     display: none;
@@ -427,17 +423,11 @@ footer {
         flex-direction: column;
         gap: 30px
     }
-    footer{
-        display: block; /* Change to block layout for better mobile view */
-    text-align: center; /* Center the content */
-    margin-top: 20px;
-    }
-    .fotos-medalha{
-        width: 190px !important;
+    
+    .fotos-medalha,.fotos-trofeu,.fotos-fitas{
+        width: 200px !important;
     }
     
-    .fotos-trofeu{
-        width: 252px !important;
-    }
+    
     
 }
